@@ -3,13 +3,14 @@
 using _1_ClassTypes.PartialClass;
 using _1_ClassTypes.SealedClass;
 using _1_ClassTypes.StaticClass;
+using _1_ClassTypes.GenericClass;
 
 //_1_ClassTypes.PartialClass.A aa = new _1_ClassTypes.PartialClass.A();
 
 
 #region PartialKavrami
 
-A aa = new A();
+_1_ClassTypes.PartialClass.A aa = new _1_ClassTypes.PartialClass.A();
 aa.Adi = "eKREM";
 aa.SoyAdi = "yILDIRIM";
 aa.Yasi = 33;
@@ -56,4 +57,13 @@ int reuslt = Calisan.Topla(1, 2);
 decimal mayis = CalisanIslemleri.MaasHesapla(30, 500);
 int izin = CalisanIslemleri.IzınHesapla(calisan);
 
+#endregion
+
+
+#region GenericKavrami
+Demo<int> d = new Demo<int>();
+d.MyProperty = 11;
+
+Demo<string> str = new Demo<string>();
+str.MyProperty = "Deneme";
 #endregion
